@@ -24,7 +24,7 @@ models.append(('LDA', LinearDiscriminantAnalysis()))
 models.append(('KNN', KNeighborsClassifier()))
 models.append(('CART', DecisionTreeClassifier()))
 models.append(('NB', GaussianNB()))
-#models.append(('SVM', SVC()))
+models.append(('SVM', SVC())) #takes longer, comment if needed 2mins aprox
 # evaluate each model in turn
 results = []
 names = []
