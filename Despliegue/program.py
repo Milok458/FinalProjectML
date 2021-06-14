@@ -32,8 +32,6 @@ def predict():
 
         pred = model.predict(data)
 
-        print(data)
-
         label5 = tk.Label(root, text='Your star is of class ' + str(pred[0]))
         label5.config(font=('helvetica', 10))
         canvas1.create_window(200, 260, window=label5)
